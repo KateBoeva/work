@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section class="header_container">
+    <div class="header_container__up">
+        <div class="header_container__logo">
+            <div class="header_container__logo--pic">
+                <img src="img/logo.png">
+            </div>
+            <div class="header_container__logo--text">
+                Студия актерского мастерства Гульнары Качаловой
+            </div>
+        </div>
+        <div class="personal_room_container">
+            <a href="#sign_in" class="personal_room_container--link">
+                <div class="personal_room_container--text"><img src="img/theatre-masks.png"></div>
+                <div class="personal_room_container--text">Личный кабинет</div>
+            </a>
+        </div>
+    </div>
+    <header>
+        <div class="header_menubar_container">
+            <div class="header_menubar">
+                <a>Главная</a>
+                <a>Занятия</a>
+                <a>Персоналии</a>
+                <a>Оплата</a>
+                <a>Городские каникулы</a>
+                <a>Контакты</a>
+            </div>
+        </div>
+    </header>
+    <div class="main_text_container">
+        <div class="main_text_container--content">
+            <div class="main_text_container--text">3 отличия Студии актерского мастерства Гульнары Качаловой</div>
+            <div><a href="#"><button class="main_text_container--button">Узнать подробнее</button></a></div>
+        </div>
+    </div>
+</section>
+<section class="courses_container">
+    <div class="courses_container--title">Курсы и Направления</div>
+    <div class="courses_container_items">
+        <div class="courses_container--item">
+            <img src="img/flag.png" alt="flag">
+            <p>Курс «Успешный»</p>
+        </div>
+        <div class="courses_container--item">
+            <img id="calendar" src="img/calendar.png" alt="calendar">
+            <p>Курс «Воскресный»</p>
+        </div>
+        <div class="courses_container--item">
+            <img src="img/guitar.png" alt="guitar">
+            <p>Искусство игры на гитаре</p>
+        </div>
+    </div>
+    <div class="courses_container--button_container"><a href="#modal"><button class="courses_container--button">Посмотреть все</button></a></div>
+</section>
+<section class="advert_container">
+    <div class="advert_container--block">
+        <h1>Объявления</h1>
+        <p>Традиционно в летнее время Студия работает по особенному графику. В этом году представляем вам возможность выбрать удобный формат и время посещения занятий с 1 июня по 31 июля. Вас ожидают четыре варианта летних программ, а также, конечно, Театральные каникулы.</p>
+        <br>
+        <p> С 1 августа Студия закрыватется для обновления помещений и подготовки к новому сезону. С 22 августа мы приглашаем всех на дни открытых дверей. </p>
+        <br>
+        <p>Более подробная информация по времени работы в этот период появится на сайте и в группе ВК в августе.</p>
+        <br>
+        <p>Всем теплого и яркого лета!<br> С уважением,<br> Администрация СтАМГК</p>
+    </div>
+    <div class="opacity_fill"></div>
+</section>
+<section class="application_container">
+    <div class="application_container_items">
+        <img src="img/masks.png">
+        <div class="application_container--content">
+            <h1>С чего начать?</h1>
+            <a><button class="application_container--button">Отправить заявку</button></a>
+        </div>
+        <img src="img/masks.png">
+    </div>
+</section>
+<section class="footer_container">
+    <div class="footer_container__items">
+        <div class="footer_container--item footer_container__logo">
+            <div class="footer_container__logo--pic"><img src="img/logo.png"></div>
+            <div class="footer_container__logo--text">Студия актерского мастерства Гульнары Качаловой</div>
+        </div>
+        <div class="footer_container--item">
+            <h1>Адрес</h1>
+            <div class="footer_container--item-content">
+                <img src="img/icons/home.png">
+                <p>г. Казань, ул. Некрасова, д 23</p>
+            </div>
+        </div>
+        <div class="footer_container--item">
+            <h1>Контакты</h1>
+            <div class="footer_container--item-content">
+                <img src="img/icons/phone.png">
+                <p>+7 (843) 296 05 86</p>
+            </div>
+            <div class="footer_container--item-content">
+                <img src="img/icons/mail.png">
+                <p>stamgk@yandex.ru</p>
+            </div>
+            <div class="footer_container--item-content">
+                <a href="#"><img src="img/icons/vk.png"></a>
+                <a href="#"><img src="img/icons/youtube.png"></a>
+                <a href="#"><img src="img/icons/instagram.png"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="sign_in" class="sign_in_container">
+    <div class="modal_container">
+        <a href="#close" title="Закрыть" class="close">x</a>
+        <div class="modal_menubar_container">
+            <a id="sign_in_link" onclick="changeForm('sign_in_link')">Вход</a>
+            <a id="sign_up_link" onclick="changeForm()">Регистрация</a>
+        </div>
+        <form id="sign_in_form" method="post">
+            <input class="modal_input" type="text" placeholder="E-mail">
+            <input class="modal_input" type="password" placeholder="Пароль">
+            <input class="modal_button" type="submit" value="Войти">
+            <a href="#">Восстановить пароль</a>
+        </form>
+        <form id="sign_up_form" method="post">
+            <input class="modal_input" type="text" placeholder="Имя">
+            <input class="modal_input" type="text" placeholder="E-mail">
+            <input class="modal_input" type="password" placeholder="Пароль">
+            <input class="modal_button" type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+<script>
+    function changeForm(name) {
+        if (name === 'sign_in_link') {
+            document.getElementById('sign_in_link').style.color = '#F24444';
+            document.getElementById('sign_up_link').style.color = '#c4c4c4';
+            document.getElementById('sign_up_form').style.display = 'none';
+            document.getElementById('sign_in_form').style.display = 'block';
+        } else {
+            document.getElementById('sign_in_link').style.color = '#c4c4c4g';
+            document.getElementById('sign_up_link').style.color = '#F24444';
+            document.getElementById('sign_up_form').style.display = 'block';
+            document.getElementById('sign_in_form').style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
